@@ -1,0 +1,20 @@
+package:
+  name: extra-context
+  version: 1.0.0
+
+source:
+  path: .
+
+requirements:
+  build:
+    - python
+    - pip
+  run:
+    - python
+
+build:
+  script: python -m pip install --no-deps --ignore-installed .
+
+test:
+  imports:
+    - extra_context
